@@ -36,15 +36,40 @@
          </head>
          <style>
             .centerbox {
+                display: flex;
+                justify-content: space-between; /* Align left and right content */
+                align-items: center;
                 width:700px;
-                height: 200px;
+                height: 300px;
                 padding: 10px;
                 border: 5px solid black;
                 margin:  20px auto;
                 position: relative;
+                gap: 20px;
             }
-       
          </style>
+         <!-- Style for right textbox-->
+          <style>
+            .right-text-box{
+                padding: 5px;
+                width: 300px;
+                height: 150px;
+                top: 10px;
+                right: 10px;
+                position: absolute;
+                border: 5px solid black;
+            }
+            .image{
+                display: flex;
+                width: 250px;
+                justify-content: center;
+                align-items: center;
+            }
+            .image img{
+                max-width: 100%; /*ensures image fits within container*/
+                height: auto;
+            }
+          </style>
     </head>
     <body>
         <!-- Header content -->
@@ -60,6 +85,14 @@
         <!-- Main Box content (image and text box)-->
         <body>
             <div class = "centerbox">
+                <!--image box left-->
+                <div class = "image">
+                <img src = "cuteCorgi.jpg" alt="Cute Corgi">
+                </div>
+                <!--text box right-->
+                <div class = "right-text-box">
+                    <input type = "text" placeholder = "text box">
+                </div>
                 </div>
          </body>
 </html>
