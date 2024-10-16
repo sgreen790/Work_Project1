@@ -16,7 +16,7 @@
                 display: flex;
                 justify-content: space-between; /* Align left and right content */
                 align-items: center;
-                background-color: red;
+                background-color: black;
                 padding: 10px;
                 color: white;
             }
@@ -95,6 +95,18 @@
             }
             .button:hover{background:solid rgb(51, 50, 50)}
           </style>
+          <!--Style for the links/footer-->
+          <style>
+            .footer{
+                display: flex;
+                padding-top: 20px;
+                justify-content: center;
+                
+            }
+            a{
+                margin: 10px;
+            }
+          </style>
     </head>
     <body>
         <!-- Header content -->
@@ -134,10 +146,17 @@
                                 const diffInMin = diffInSec/60;
                                 const diffInHrs = diffInMin/60;
                                 const diffInDays =diffInHrs/24;
-                                alert("there are " + Math.floor(diffInDays) + " days, " + Math.floor(diffInHrs%24) + " hours, " + Math.floor(diffInMin%60) + " minutes, and " + Math.floor(diffInSec%60) + " seconds until that day.");
+                                alert("there are " + Math.floor(diffInDays) + " days, " + Math.floor(diffInHrs%24) + " hours, " + Math.floor(diffInMin%60) + " minutes, and " + Math.floor(diffInSec%60) + " seconds until October 17, 2024.");
                             }
                     </script>
                 </div>
                 </div>
+                <footer>
+                    <div class = "footer">
+                    <p> <a href = "https://www.akc.org/expert-advice/lifestyle/fun-facts-pembroke-welsh-corgi/" target ="_blank"> Fun Facts About Corgis</a></p>
+                    <p> <a href = "https://stock.adobe.com/search?k=corgi" target ="_blank"> Corgi Pictures</a></p>
+                    <p> <a href = "https://blog.petslily.com/corgi-dog-breed?gad_source=1&gclid=Cj0KCQjw05i4BhDiARIsAB_2wfBm-RqJu6hlTYJ3t6FCcW7pFMHAbwiWNVUA4nGwTRhrGuOafMDC-sYaAju7EALw_wcB" target = "blank"> Corgi Personality</a></p>
+                </div>
+                </footer>
          </body>
 </html>
